@@ -30,6 +30,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	/* Top padding for clearing out the navbar*/
+	padding-top: 15vh;
 }
 
 .hero-column-lg {
@@ -72,6 +75,9 @@
 	max-width: min(150vh, 80vw);
 	height: min(100vh, calc((9 / 16) * 100vw));
 	margin: 0 auto;
+
+	/* Top padding to clear out the navbar */
+	padding-top: 5rem;
 }
 
 .hero-column-xl {

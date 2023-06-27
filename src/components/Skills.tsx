@@ -1,6 +1,4 @@
-import React from "react";
 import "./Skills.css";
-import reactIcon from "../assets/React-icon.svg";
 
 const Skills = () => {
 	return (

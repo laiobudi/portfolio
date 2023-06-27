@@ -1,11 +1,16 @@
-import React from "react";
 import "./Back2TopPortal.css";
 import { RiUpload2Line } from "react-icons/ri";
 
-const Back2TopPortal = () => {
+interface Props {
+	onClick: () => void;
+}
+
+const Back2TopPortal = ({ onClick: onClick }: Props) => {
 	return (
-		<div>
-			<RiUpload2Line />
+		<div className="back2top-portal-container">
+			<a href="#hero" onClick={() => onClick()}>
+				<RiUpload2Line className="back2top-icon" />
+			</a>
 		</div>
 	);
 };

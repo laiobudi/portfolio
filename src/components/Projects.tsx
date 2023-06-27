@@ -1,10 +1,8 @@
-import React from "react";
-import "./Projects.css";
-import ProjectDummy from "../assets/projects-dummy.jpg";
-import ProjectKV from "../assets/proj_kv_outline.png";
-import ProjectGH from "../assets/proj_gh_outline.png";
-import ProjectMoshify from "../assets/proj_moshify_outline.png";
 import { BsBoxArrowInRight, BsGithub } from "react-icons/bs";
+import ProjectGH from "../assets/proj_gh_outline.png";
+import ProjectKV from "../assets/proj_kv_outline.png";
+import ProjectMoshify from "../assets/proj_moshify_outline.png";
+import "./Projects.css";
 
 const Projects = () => {
 	return (

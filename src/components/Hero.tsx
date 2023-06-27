@@ -1,4 +1,3 @@
-import React from "react";
 import HeroImage from "../assets/dummy.jpg";
 import "./Hero.css";
 import { BsGithub } from "react-icons/bs";
@@ -13,7 +12,6 @@ const Hero = ({ screenSize }: Props) => {
 	const intro =
 		"I am a recent university graduate who bears the enthusiasm in creating different kinds of web applications. Through the process of coding I found myself incredibly happy as it is such a rewarding experience to create something out of nothing! Going into the industry, my goal is to learn new things everyday, and to become a proficient web developer who stands out amoung the majority.";
 
-	console.log(screenSize);
 	if (screenSize === "sm" || screenSize === "me")
 		return (
 			<div className="hero-container hero-container-sm" id="hero">

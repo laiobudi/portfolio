@@ -7,3 +7,7 @@
 	color: orange !important;
 	font-weight: 400 !important;
 }
+
+.navbar {
+	background-color: var(--color-dark);
+}

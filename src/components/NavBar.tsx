@@ -1,10 +1,14 @@
-import React from "react";
 import icon from "../assets/icon.png";
 import "./NavBar.css";
 
-const NavBar = () => {
+interface Props {
+	selectedContent: string;
+	onSelect: (content: string) => void;
+}
+
+const NavBar = ({ selectedContent, onSelect }: Props) => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark" id="navbar">
+		<nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
 			<div className="container-fluid">
 				<a className="navbar-brand" href="#">
 					<img src={icon} alt="" className="nav-icon" />
@@ -23,28 +27,47 @@ const NavBar = () => {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li className="nav-item">
-							<a className="nav-link active" href="#hero">
+							<a
+								className={`nav-link ${
+									selectedContent === "about" && "active"
+								}`}
+								onClick={() => onSelect("about")}
+								href="#hero"
+							>
 								About Me
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link " aria-current="page" href="#skills">
+							<a
+								className={`nav-link ${
+									selectedContent === "skill" && "active"
+								}`}
+								onClick={() => onSelect("skill")}
+								aria-current="page"
+								href="#skills"
+							>
 								Skills
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link " aria-current="page" href="#projects">
+							<a
+								className={`nav-link ${selectedContent === "proj" && "active"}`}
+								onClick={() => onSelect("proj")}
+								aria-current="page"
+								href="#projects"
+							>
 								Projects
 							</a>
 						</li>
-						{/* <li className="nav-item">
-							<a className="nav-link " aria-current="page" href="#">
-								Work
-							</a>
-						</li> */}
 						<li className="nav-item">
-							<a className="nav-link" href="#educations">
-								Qulifications
+							<a
+								className={`nav-link ${
+									selectedContent === "quali" && "active"
+								}`}
+								onClick={() => onSelect("quali")}
+								href="#educations"
+							>
+								Qualifications
 							</a>
 						</li>
 					</ul>

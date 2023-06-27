@@ -1,6 +1,4 @@
-import React from "react";
 import "./Footer.css";
-import { BiCopyright } from "react-icons/bi";
 
 const Footer = () => {
 	return (

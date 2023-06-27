@@ -1,4 +1,3 @@
-import React from "react";
 import "./Education.css";
 import testamurA from "../assets/FramedTestamur.png";
 import testamurB from "../assets/FramedTestamurB.png";
@@ -13,7 +12,7 @@ const Education = ({ screenSize }: Props) => {
 		return (
 			<div className="education-container-sm">
 				<h1 className="education-intro-sm" id="educations">
-					My Qulifications
+					My Qualifications
 				</h1>
 				<div className="testamur-text-sm">
 					<h2 className="testamur-title-sm">
@@ -60,7 +59,7 @@ const Education = ({ screenSize }: Props) => {
 				<img src={contentLead} alt="" className="content-lead-lower" />
 				<div className="education-intro-container-lg">
 					<h1 className="education-intro-lg" id="educations">
-						My Qulifications
+						My Qualifications
 					</h1>
 				</div>
 			</div>
