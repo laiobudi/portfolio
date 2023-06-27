@@ -1,0 +1,23 @@
+.footer-container {
+	background-color: var(--color-bright);
+	color: var(--color-dark);
+	text-align: center;
+}
+
+.copyright {
+	font-size: 18px;
+	justify-content: center;
+	font-weight: 500;
+	padding: 10vw 0;
+}
+
+@media screen and (max-width: 768px) {
+	.footer-container {
+		background-color: var(--color-dark);
+		color: #666666;
+	}
+	.copyright {
+		padding-top: 15vh;
+		padding-bottom: 10vh;
+	}
+}

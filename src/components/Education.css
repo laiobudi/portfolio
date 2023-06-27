@@ -1,0 +1,119 @@
+/* For small layout: */
+
+.education-container-sm {
+	background-color: #121212;
+	color: white;
+	padding-top: 5rem;
+}
+
+.education-intro-sm {
+	margin-left: 10px;
+}
+
+.testamur-title-sm {
+	text-align: center;
+	margin-top: 4rem;
+	color: orange;
+}
+
+.testamur-description-sm {
+	margin-left: 1rem;
+}
+
+.testamur-img-sm {
+	width: 100%;
+	max-width: 425px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* For large and xl layouts: */
+
+.education-container-lg {
+	background-color: var(--color-bright);
+	color: var(--color-dark);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: min(100vh, calc((9 / 16) * 100vw)); */
+}
+
+.education-column {
+	width: 40%;
+}
+
+.column-center-lg {
+	width: 10%;
+	position: relative;
+}
+
+.education-intro-container-lg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background-color: var(--color-dark);
+	aspect-ratio: 1 / 1;
+	border-radius: 100%;
+	width: 150%;
+
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.education-intro-lg {
+	font-size: 2.6vw;
+	color: var(--color-bright);
+	/* transform: rotate(-90deg); */
+}
+
+.column-A-lg {
+	padding: 5%;
+	padding-right: 10%;
+}
+
+.column-B-lg {
+	padding: 5%;
+	padding-left: 10%;
+}
+
+.testamur-img-container-lg {
+	/* set testamur image style here */
+	padding: 3%;
+}
+
+.testamur-img-lg {
+	width: 100%;
+}
+
+.testamur-text-lg {
+	margin: 5% 0;
+}
+
+.testamur-title-lg {
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+.testamur-description-lg {
+	font-size: 1.2vw;
+}
+
+/* EXPERIMENTAL */
+.content-lead-upper {
+	width: 130%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-110%, -140%);
+}
+
+.content-lead-lower {
+	width: 130%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: rotate(180deg) translate(-3%, -35%);
+}

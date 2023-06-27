@@ -1,0 +1,109 @@
+.skills-grid-container {
+	/* aspect-ratio: 16 / 9; */
+	height: 60vw;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 10px;
+	/* border: 2px solid red; */
+}
+
+.skills-grid-item {
+	/* background-color: #ccc; */
+	/* color: #dbe0dc; */
+	display: flexbox;
+	align-self: center;
+	justify-self: center;
+}
+
+.skills-master-container {
+	background-color: var(--color-bright);
+	position: relative;
+	z-index: -3;
+	overflow: hidden;
+
+	background-color: var(--color-dark);
+}
+
+.skills-master-container .react-logo {
+	width: 5vw;
+	position: absolute;
+	top: 20%;
+	left: 27%;
+}
+
+.triangle {
+	--border-width: 14vw;
+
+	position: absolute;
+	z-index: -1;
+	top: 53.6%;
+	left: 2.7%;
+
+	transform: rotate(15deg);
+
+	width: 0;
+	height: 0;
+	border-left: var(--border-width) solid transparent;
+	border-right: var(--border-width) solid transparent;
+	border-bottom: calc(var(--border-width) * 2 * 0.8660254) solid orange;
+}
+
+.circle {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	border-radius: 50%;
+	width: 10vw;
+	aspect-ratio: 1 /1;
+	background-color: var(--color-ornament);
+}
+
+.circle-center {
+	width: 15vw;
+	top: 50%;
+	left: 50%;
+	background-color: var(--color-burgundy);
+}
+
+.circle-A {
+	width: 20vw;
+	top: 15%;
+	left: 17%;
+	background-color: var(--color-salmon);
+}
+
+.circle-B {
+	width: 200vw;
+	top: 230%;
+	left: 90%;
+	background-color: var(--color-bright);
+}
+
+.circle-C {
+	width: 20vw;
+	top: 20%;
+	left: 88%;
+	background-color: var(--color-ornament);
+}
+
+.circle-D {
+	width: 60vw;
+	z-index: -2;
+	top: 20%;
+	left: 88%;
+	background-color: var(--color-salmon);
+}
+
+.skills-grid-item h1 {
+	font-size: 2.8vw;
+}
+
+.skills-grid-item h2 {
+	font-size: 2vw;
+}
+
+.skills-grid-item ul {
+	font-size: 1.2vw;
+}

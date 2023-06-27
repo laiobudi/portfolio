@@ -1,0 +1,66 @@
+.skills-grid-container {
+	/* aspect-ratio: 16 / 10; */
+	height: 60vw;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1px;
+}
+
+.skills-grid {
+}
+
+.skills-grid-item {
+	width: 100%;
+	height: 100%;
+	color: var(--color-bright);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills-grid-item h1 {
+	font-size: 2.8vw;
+}
+
+.skills-grid-item h2 {
+	font-size: 2vw;
+}
+
+.skills-grid-item ul {
+	font-size: 1.2vw;
+}
+
+.skills-grid-container .item-A {
+	background-color: var(--color-salmon);
+}
+.skills-grid-container .item-B {
+	background-color: var(--color-dark);
+	color: orange;
+}
+.skills-grid-container .item-C {
+	background-color: var(--color-salmon);
+}
+.skills-grid-container .item-D {
+	background-color: var(--color-dark);
+}
+.skills-grid-container .item-E {
+	background-color: var(--color-salmon);
+
+	color: orange;
+}
+.skills-grid-container .item-F {
+	background-color: var(--color-dark);
+}
+.skills-grid-container .item-G {
+	background-color: var(--color-salmon);
+}
+.skills-grid-container .item-H {
+	background-color: var(--color-dark);
+	color: orange;
+}
+.skills-grid-container .item-I {
+	background-color: var(--color-salmon);
+}

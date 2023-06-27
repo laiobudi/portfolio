@@ -1,0 +1,9 @@
+.nav-icon {
+	height: 27px;
+	margin-left: 10px;
+}
+
+.active {
+	color: orange !important;
+	font-weight: 400 !important;
+}
