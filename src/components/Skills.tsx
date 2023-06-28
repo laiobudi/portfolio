@@ -1,8 +1,17 @@
+import { useRef } from "react";
 import "./Skills.css";
+import useScrollEffect from "../hooks/useScrollEffect";
 
-const Skills = () => {
+interface Props {
+	onVisible: (content: string) => void;
+}
+
+const Skills = ({ onVisible }: Props) => {
+	const sectionRef = useRef<HTMLDivElement>(null);
+	useScrollEffect(() => onVisible("skill"), sectionRef);
+
 	return (
-		<div className="skills-container" id="skills">
+		<div ref={sectionRef} className="skills-container" id="skills">
 			<div className="skills-banner">
 				<h1>My Skills</h1>
 			</div>

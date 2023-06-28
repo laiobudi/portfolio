@@ -27,17 +27,27 @@ function App() {
 
 	const [selectedContent, setSelectedContent] = useState("about");
 
+	const setNavbarActiveContent = (content: string) => {
+		setSelectedContent(content);
+	};
+
 	return (
 		<div>
 			<NavBar
 				selectedContent={selectedContent}
 				onSelect={(content) => setSelectedContent(content)}
 			/>
-			<Hero screenSize={screenSize} />
-			<Skills />
-			<Projects />
-			<Education screenSize={screenSize} />
-			<Back2TopPortal onClick={() => setSelectedContent("about")} />
+			<Hero
+				screenSize={screenSize}
+				onVisible={(content) => setNavbarActiveContent(content)}
+			/>
+			<Skills onVisible={(content) => setNavbarActiveContent(content)} />
+			<Projects onVisible={(content) => setNavbarActiveContent(content)} />
+			<Education
+				screenSize={screenSize}
+				onVisible={(content) => setNavbarActiveContent(content)}
+			/>
+			<Back2TopPortal onClick={() => setNavbarActiveContent("about")} />
 			<Footer />
 		</div>
 	);

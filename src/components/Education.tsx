@@ -2,12 +2,15 @@ import "./Education.css";
 import testamurA from "../assets/FramedTestamur.png";
 import testamurB from "../assets/FramedTestamurB.png";
 import contentLead from "../assets/css-line.svg";
+import { useRef } from "react";
+import useScrollEffect from "../hooks/useScrollEffect";
 
 interface Props {
 	screenSize: string;
+	onVisible: (content: string) => void;
 }
 
-const Education = ({ screenSize }: Props) => {
+const Education = ({ screenSize, onVisible }: Props) => {
 	if (screenSize === "sm" || screenSize === "me")
 		return (
 			<div className="education-container-sm">
@@ -38,8 +41,11 @@ const Education = ({ screenSize }: Props) => {
 			</div>
 		);
 
+	const sectionRef = useRef<HTMLDivElement>(null);
+	useScrollEffect(() => onVisible("quali"), sectionRef);
+
 	return (
-		<div className="education-container-lg">
+		<div ref={sectionRef} className="education-container-lg" id="educations">
 			<div className="education-column column-A-lg">
 				<div className="testamur-text-lg">
 					<h2 className="testamur-title-lg">
@@ -58,9 +64,7 @@ const Education = ({ screenSize }: Props) => {
 				<img src={contentLead} alt="" className="content-lead-upper" />
 				<img src={contentLead} alt="" className="content-lead-lower" />
 				<div className="education-intro-container-lg">
-					<h1 className="education-intro-lg" id="educations">
-						My Qualifications
-					</h1>
+					<h1 className="education-intro-lg">My Qualifications</h1>
 				</div>
 			</div>
 			<div className="education-column column-B-lg">

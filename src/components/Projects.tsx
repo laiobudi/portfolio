@@ -3,10 +3,19 @@ import ProjectGH from "../assets/proj_gh_outline.png";
 import ProjectKV from "../assets/proj_kv_outline.png";
 import ProjectMoshify from "../assets/proj_moshify_outline.png";
 import "./Projects.css";
+import { useRef } from "react";
+import useScrollEffect from "../hooks/useScrollEffect";
 
-const Projects = () => {
+interface Props {
+	onVisible: (content: string) => void;
+}
+
+const Projects = ({ onVisible }: Props) => {
+	const sectionRef = useRef<HTMLDivElement>(null);
+	useScrollEffect(() => onVisible("proj"), sectionRef);
+
 	return (
-		<div className="projects-master-container" id="projects">
+		<div ref={sectionRef} className="projects-master-container" id="projects">
 			<h1 className="projects-banner">My Projects</h1>
 			<div className="project-item">
 				{window.innerWidth <= 768 ? null : (

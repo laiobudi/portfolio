@@ -3,12 +3,15 @@ import "./Hero.css";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import { AiFillLinkedin } from "react-icons/ai";
+import useScrollEffect from "../hooks/useScrollEffect";
+import { useRef } from "react";
 
 interface Props {
 	screenSize: string;
+	onVisible: (content: string) => void;
 }
 
-const Hero = ({ screenSize }: Props) => {
+const Hero = ({ screenSize, onVisible }: Props) => {
 	const intro =
 		"I am a recent university graduate who bears the enthusiasm in creating different kinds of web applications. Through the process of coding I found myself incredibly happy as it is such a rewarding experience to create something out of nothing! Going into the industry, my goal is to learn new things everyday, and to become a proficient web developer who stands out amoung the majority.";
 
@@ -41,9 +44,17 @@ const Hero = ({ screenSize }: Props) => {
 				</div>
 			</div>
 		);
-	else if (screenSize === "lg")
+
+	const sectionRef = useRef<HTMLDivElement>(null);
+	useScrollEffect(() => onVisible("about"), sectionRef);
+
+	if (screenSize === "lg")
 		return (
-			<div className="hero-container hero-container-lg" id="hero">
+			<div
+				ref={sectionRef}
+				className="hero-container hero-container-lg"
+				id="hero"
+			>
 				<div className="hero-column-lg hero-text-container-lg">
 					<h1 className="greeting-lg">Hi! I am Frank.</h1>
 					<p className="intro-lg">{intro}</p>
@@ -73,7 +84,11 @@ const Hero = ({ screenSize }: Props) => {
 			</div>
 		);
 	return (
-		<div className="hero-container hero-container-xl" id="hero">
+		<div
+			ref={sectionRef}
+			className="hero-container hero-container-xl"
+			id="hero"
+		>
 			<div className="hero-column-xl ">
 				<div className="hero-text-container-xl">
 					<h1 className="greeting-xl">Hi! I am Frank.</h1>
