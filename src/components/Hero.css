@@ -32,7 +32,8 @@
 	justify-content: center;
 
 	/* Top padding for clearing out the navbar*/
-	padding-top: 15vh;
+	padding-top: 20vh;
+	padding-bottom: 10vh;
 }
 
 .hero-column-lg {
@@ -58,6 +59,8 @@
 
 .hero-img-container-lg {
 	margin-left: 1rem;
+	border-radius: 100%;
+	overflow: hidden;
 }
 
 .hero-img-lg {
@@ -103,6 +106,8 @@
 
 .hero-img-container-xl {
 	margin: 10% 15% 10% 5%;
+	border-radius: 100%;
+	overflow: hidden;
 }
 
 .hero-img-xl {

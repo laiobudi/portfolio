@@ -1,4 +1,4 @@
-import HeroImage from "../assets/dummy.jpg";
+import HeroImage from "../assets/profile_photoB.jpg";
 import "./Hero.css";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
