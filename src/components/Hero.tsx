@@ -13,7 +13,9 @@ interface Props {
 
 const Hero = ({ screenSize, onVisible }: Props) => {
 	const intro =
-		"I am a recent university graduate who bears the enthusiasm in creating different kinds of web applications. Through the process of coding I found myself incredibly happy as it is such a rewarding experience to create something out of nothing! Going into the industry, my goal is to learn new things everyday, and to become a proficient web developer who stands out amoung the majority.";
+		"I am a recent university graduate who bears the enthusiasm for crafting various kinds of web applications. Through the process of coding, I found myself incredibly happy as it is such a rewarding experience to create something out of nothing! As I enter the industry, my goal is to learn new things every day and become a proficient web developer who stands out among the majority.";
+
+	const anotherIntro = "";
 
 	if (screenSize === "sm" || screenSize === "me")
 		return (

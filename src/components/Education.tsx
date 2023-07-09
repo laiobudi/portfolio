@@ -1,6 +1,6 @@
 import "./Education.css";
-import testamurA from "../assets/FramedTestamur.png";
-import testamurB from "../assets/FramedTestamurB.png";
+import testamurA from "../assets/Testamur.png";
+import testamurB from "../assets/TestamurB.png";
 import contentLead from "../assets/css-line.svg";
 import { useRef } from "react";
 import useScrollEffect from "../hooks/useScrollEffect";
