@@ -7,7 +7,8 @@
 }
 
 .education-intro-sm {
-	margin-left: 10px;
+	text-align: center;
+	color: var(--color-bright);
 }
 
 .testamur-title-sm {
