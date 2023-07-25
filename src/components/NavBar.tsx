@@ -70,6 +70,16 @@ const NavBar = ({ selectedContent, onSelect }: Props) => {
 								Qualifications
 							</a>
 						</li>
+						<li className="nav-item">
+							<a
+								className="nav-link"
+								href="https://drive.google.com/file/d/13ab07pKOfLJZYU-EMw9pi6kYiwEp0CKh/view?usp=sharing"
+								target="_blank"
+								style={{ color: "orange" }}
+							>
+								Resume
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
