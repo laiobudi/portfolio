@@ -72,6 +72,17 @@ const NavBar = ({ selectedContent, onSelect }: Props) => {
 						</li>
 						<li className="nav-item">
 							<a
+								className={`nav-link ${
+									selectedContent === "contact" && "active"
+								}`}
+								onClick={() => onSelect("contact")}
+								href="#contact"
+							>
+								Contact
+							</a>
+						</li>
+						<li className="nav-item">
+							<a
 								className="nav-link"
 								href="https://drive.google.com/file/d/13ab07pKOfLJZYU-EMw9pi6kYiwEp0CKh/view?usp=sharing"
 								target="_blank"

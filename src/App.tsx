@@ -10,6 +10,7 @@ import Skills from "./components/Skills";
 
 function App() {
 	const [screenSize, setScreenSize] = useState("");
+	const [selectedContent, setSelectedContent] = useState("about");
 
 	useEffect(() => {
 		function handleResize() {
@@ -24,8 +25,6 @@ function App() {
 
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
-
-	const [selectedContent, setSelectedContent] = useState("about");
 
 	const setNavbarActiveContent = (content: string) => {
 		setSelectedContent(content);
@@ -48,7 +47,7 @@ function App() {
 				onVisible={(content) => setNavbarActiveContent(content)}
 			/>
 			<Back2TopPortal onClick={() => setNavbarActiveContent("about")} />
-			<Footer />
+			<Footer onVisible={(content) => setNavbarActiveContent(content)} />
 		</div>
 	);
 }

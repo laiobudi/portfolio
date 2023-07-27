@@ -1,0 +1,120 @@
+.contact-form-container {
+	background-color: var(--color-dark);
+	color: var(--color-bright);
+	margin: 30px auto;
+	width: 50%;
+	border-radius: 3vw;
+	padding: 5vw 3vw;
+	background-color: #171717;
+}
+
+.contact-form-container > h1 {
+	font-size: 3vw;
+	margin-bottom: 3vw;
+}
+
+.horizontal-stack {
+	display: flex;
+	gap: 1vw;
+}
+
+.form-group {
+	flex: 1 1 0;
+	padding: 0.9vw 0;
+}
+
+.form-control {
+	background-color: #121212;
+	color: var(--color-bright);
+	border: none;
+	border-radius: 0.6vw;
+	font-size: max(1vw, 1rem);
+	padding: 0.6vw 0.9vw;
+}
+
+.form-control:focus {
+	color: var(--color-bright);
+	background-color: #121212;
+	border-color: var(--color-bright);
+	box-shadow: 0 0 0 0.25rem #333333;
+}
+
+.contact-form-container .form-group > input,
+.contact-form-container .horizontal-stack .form-group > input {
+	color-scheme: dark;
+}
+
+.contact-form-container > form > button {
+	background-color: var(--color-dark);
+	border-color: orange;
+	color: orange;
+}
+
+.form-action {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2vw;
+	margin-bottom: 1vw;
+}
+
+.btn-submit-email {
+	width: fit-content;
+	height: min-content;
+	font-size: max(1vw, 1rem);
+
+	background-color: #171717;
+	color: var(--color-bright);
+	border-color: var(--color-bright);
+}
+
+.btn-submit-email:hover {
+	color: orange;
+	border-color: orange;
+	background-color: #171717;
+}
+
+.form-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+	.contact-form-container {
+		width: 70%;
+		margin-top: 20vh;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.contact-form-container {
+		width: 90%;
+		margin-top: 20vh;
+	}
+
+	.contact-form-container > h1 {
+		font-size: max(3.5vh, 3vw);
+	}
+
+	.contact-form-container .horizontal-stack {
+		display: block;
+	}
+
+	.form-group {
+		padding: max(1vh, 0.9vw) 0;
+	}
+
+	.form-control {
+		border-radius: 8px;
+		padding: 1vh 2vh;
+	}
+
+	.form-action {
+		display: block;
+	}
+
+	.form-btn {
+		margin-top: 15px;
+	}
+}

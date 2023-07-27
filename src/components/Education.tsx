@@ -38,6 +38,10 @@ const Education = ({ screenSize, onVisible }: Props) => {
 					</ul>
 				</div>
 				<img src={testamurB} alt="" className="testamur-img-sm" />
+				<p className="education-annotation-sm">
+					*Link to {<a href="https://www.myequals.edu.au/">My eQuals</a>}{" "}
+					provided upon request
+				</p>
 			</div>
 		);
 
@@ -81,51 +85,12 @@ const Education = ({ screenSize, onVisible }: Props) => {
 					</ul>
 				</div>
 			</div>
+			<p className="education-annotation">
+				*Link to {<a href="https://www.myequals.edu.au/">My eQuals</a>} provided
+				upon request
+			</p>
 		</div>
 	);
 };
 
 export default Education;
-
-// *** Deprecated lg layout rendering *** //
-//
-// else if (screenSize === "lg")
-// 	return (
-// 		<div className="education-container-lg">
-// 			<div className="education-column column-A-lg">
-// 				<div className="testamur-text-lg">
-// 					<h2 className="testamur-title-lg">
-// 						Master of Information Technology
-// 					</h2>
-// 					<ul className="testamur-description-lg">
-// 						<li>At The University of Melbourne, Parkville</li>
-// 						<li>From July 2020 to January 2022</li>
-// 					</ul>
-// 				</div>
-// 				<div className="testamur-img-container-lg">
-// 					<img src={testamurA} alt="" className="testamur-img-lg" />
-// 				</div>
-// 			</div>
-// 			<div className="column-center-lg">
-// 				<div className="education-intro-container-lg">
-// 					<h1 className="education-intro-lg" id="educations">
-// 						My Qulifications
-// 					</h1>
-// 				</div>
-// 			</div>
-// 			<div className="education-column column-B-lg">
-// 				<div className="testamur-img-container-lg-B">
-// 					<img src={testamurB} alt="" className="testamur-img-lg" />
-// 				</div>
-// 				<div className="testamur-text-lg">
-// 					<h2 className="testamur-title-lg">
-// 						Bachelor of Information Technology
-// 					</h2>
-// 					<ul className="testamur-description-lg">
-// 						<li>At Deakin University, Burwood</li>
-// 						<li>From July 2019 to July 2020</li>
-// 					</ul>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	);

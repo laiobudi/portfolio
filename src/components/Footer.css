@@ -1,7 +1,8 @@
 .footer-container {
-	background-color: var(--color-bright);
-	color: var(--color-dark);
+	background-color: var(--color-dark);
+	color: var(--color-bright);
 	text-align: center;
+	margin-top: 10vw;
 }
 
 .copyright {
@@ -9,6 +10,10 @@
 	justify-content: center;
 	font-weight: 500;
 	padding: 10vw 0;
+}
+
+.education-annotation {
+	/* color: var(--color-bright); */
 }
 
 @media screen and (max-width: 768px) {

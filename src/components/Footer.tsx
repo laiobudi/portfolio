@@ -1,12 +1,13 @@
+import ContactForm from "./ContactForm";
 import "./Footer.css";
+interface Props {
+	onVisible: (content: string) => void;
+}
 
-const Footer = () => {
+const Footer = ({ onVisible }: Props) => {
 	return (
 		<div className="footer-container">
-			<p className="education-annotation">
-				*Link to {<a href="https://www.myequals.edu.au/">My eQuals</a>} provided
-				upon request
-			</p>
+			<ContactForm onVisible={onVisible} />
 			<div className="copyright">
 				<span>Copyright &copy; Frank Leo 2023</span>
 			</div>
